@@ -13,7 +13,7 @@ function Hero() {
       </nav>
       <div className="hero-content">
         <p className="eyebrow">ACM Mentor Program!</p>
-        <h1>Mr. Peechi</h1>
+        <h1>Sanskriti Tiwari</h1>
         <p>
           This portfolio is meant as a starting point for something great!
         </p>

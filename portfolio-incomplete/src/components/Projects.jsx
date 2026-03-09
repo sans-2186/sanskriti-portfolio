@@ -2,22 +2,22 @@ import { useMemo, useState } from "react";
 import SectionTitle from "./SectionTitle";
 
 function Projects({ items }) {
-  // TODO: Derive a unique tag list from project tech stacks and include "All".
   const tags = useMemo(() => {
-    // TODO: Replace with logic that collects and deduplicates tags.
-    return ["All"];
+    // This looks at all your projects and collects every tech used
+    const allTech = items.flatMap(project => project.techStack);
+    // 'Set' removes the duplicates so you don't have two "React" buttons
+    return ["All", ...new Set(allTech)];
   }, [items]);
 
   // TODO: Track the selected filter.
   const [activeTag, setActiveTag] = useState("All");
 
   // TODO: Filter projects by activeTag ("All" should show every project).
-  const visibleProjects = items;
-  // TODO: Replace with filter logic:
-  // const visibleProjects =
-  //   activeTag === "All"
-  //     ? items
-  //     : items.filter((project) => project.techStack.includes(activeTag));
+  const visibleProjects = useMemo(() => {
+    return activeTag === "All" 
+      ? items 
+      : items.filter((project) => project.techStack.includes(activeTag));
+  }, [activeTag, items]);
 
   return (
     <section className="section" id="projects">
@@ -45,17 +45,16 @@ function Projects({ items }) {
             <img src={project.image} alt="" />
             <div className="project-content">
               {/* TODO: Render project title and description */}
-              <h3></h3>
-              <p></p>
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
               <ul className="chip-list small">
                 {project.techStack.map((tech) => (
                   <li key={`${project.title}-${tech}`}>
-                    {/* TODO: Render each tech label */}
+                    {tech}
                   </li>
                 ))}
               </ul>
-              {/* TODO: Add project link text and href target */}
-              <a href={project.link} target="_blank" rel="noreferrer noopener"></a>
+              <a href={project.link} target="_blank" rel="noreferrer noopener">View Project</a>
             </div>
           </article>
         ))}

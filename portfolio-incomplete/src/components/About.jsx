@@ -4,8 +4,7 @@ function About() {
   return (
     <section className="section" id="about">
       <SectionTitle eyebrow="About Me" title="A bit about my background" />
-      {/* TODO: Write a short bio paragraph about yourself */}
-      <p>Demo Text</p>
+      <p>I am a sophomore at the University of Texas at Dallas majoring in Computer Science. My hobbies are drawing, playing badminton, and listening to music.</p>
     </section>
   );
 }
