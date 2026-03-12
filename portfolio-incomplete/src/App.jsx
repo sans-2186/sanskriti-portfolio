@@ -3,6 +3,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import Contacts from "./components/Contacts";
 import { projects } from "./data/projects";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Skills />
         {/* TODO: Pass project data into the Projects component */}
         <Projects items={projects} />
+        <Contacts />
       </main>
       {/* TODO: Render a footer component here */}
       <Footer />
