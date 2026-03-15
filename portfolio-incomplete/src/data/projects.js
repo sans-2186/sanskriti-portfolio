@@ -13,5 +13,11 @@ export const projects = [
       link: "https://github.com/sans-2186/personal-portfolio",
       image: "/Users/umeshtiwari/MenteePortfolio-1/portfolio-incomplete/src/data/assets/Screen Shot 2026-03-14 at 6.02.38 PM 1.png"
    },
-  
+  {
+    title: "Movies Review Sentinmental Analysis App",
+    description: "Designed and developed a personal portfolio website using React, showcasing projects, skills, and contact information with a responsive and visually appealing interface.",
+    techStack: ["React", "CSS", "JavaScript"],
+    link: "https://github.com/sans-2186/personal-portfolio",
+    image: "/Users/umeshtiwari/MenteePortfolio-1/portfolio-incomplete/src/data/assets/Screen Shot 2026-03-14 at 6.02.38 PM 1.png"
+  }
 ];
