@@ -1,9 +1,10 @@
 import SectionTitle from "./SectionTitle";
 
 const skills = {
-  "Languages": ["Java", "C++", "Python", "JavaScript", "SQL"],
-  "Frameworks & Libs": ["React", "Node.js", "Express", "Tailwind CSS"],
-  "Tools & Tech": ["Git", "VS Code", "Unix/Linux", "Postman"]
+  "Languages": ["Java", "C++", "Python", "MIPS", "JavaScript"],
+  "Frameworks & Libs": ["React", "Node.js", "NLTK", "TensorFlow", "CSS"],
+  "Data Analysis & Visualization": ["NumPy", "Matplotlib", "Seaborn", "Pandas"],
+  "Tools & Tech": ["Git", "VS Code", "Linux", "MySQL"]
 };
 
 function Skills() {
