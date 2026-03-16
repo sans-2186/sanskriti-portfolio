@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Contacts from "./components/Contacts";
 import { projects } from "./data/projects";
+import Experience from "./components/Experience";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Skills />
         {/* TODO: Pass project data into the Projects component */}
         <Projects items={projects} />
+        <Experience />
         <Contacts />
       </main>
       {/* TODO: Render a footer component here */}

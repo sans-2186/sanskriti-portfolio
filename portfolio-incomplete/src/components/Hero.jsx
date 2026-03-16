@@ -9,6 +9,7 @@ function Hero() {
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
           <a href="#contacts">Contacts</a>
         </div>
       </nav>
@@ -16,7 +17,7 @@ function Hero() {
         <p className="eyebrow">ACM Mentor Program!</p>
         <h1>Sanskriti Tiwari</h1>
         <p>
-          This portfolio is meant as a starting point for something great!
+          I build things with code and make sense of things with data
         </p>
       </div>
     </section>

@@ -10,7 +10,7 @@ const skills = {
 function Skills() {
   return (
     <section className="section" id="skills">
-      <SectionTitle eyebrow="My Skills" title="My base of knowledge" />
+      <SectionTitle eyebrow="My Skills" title="My Toolkit" />
   
       <div className="skills-container">
         {Object.entries(skills).map(([category, items]) => (
